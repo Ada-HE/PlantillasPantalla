@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fcebd0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 400px;
+    height: 870px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #faa850;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    position: relative;
+}
+
+.titulo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.titulo img {
+    width: 80px;
+    margin-left: 90px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #faa850;
+    height: 80%;
+    padding: 1em;
+    margin-top: 80px;
+}
+
+.d1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Añadido para centrar los elementos */
+    padding: 20px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+}
+
+.d1 h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.img img {
+    width: 200px;
+    height: 200px; /* Tamaño ajustado */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Espaciado inferior añadido */
+}
+
+label {
+    margin-bottom: 15px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%; /* Ajustado para ocupar todo el ancho */
+}
+
+button {
+    background-color: #41800e;
+    color: white;
+    padding: 15px; /* Tamaño ajustado */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 50; /* Ajustado para ocupar todo el ancho */
+}
+.back-button{
+    width: 70px;
+}
+.links-container {
+    display:inline;
+    flex-direction: column;
+}
+
+.link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.registro {
+    color: blue;
+}
+
+.olvido {
+    color: blue;
+}

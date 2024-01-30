@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="login-container">
+            
+            <div class="titulo">
+                <button class="back-button" onclick="history.back()">Atrás</button>
+                <img src="img/logo.png" alt="logo">
+                <p>Mix-sandwich</p>
+            </div>
+
+            <div class="d1">
+                <h1>Iniciar Sesión</h1>
+                <div class="form-group">
+                    <div class="img">
+                        <center>
+                            <img src="img/logo3.png" alt="imgLogin">
+                        </center>
+                    </div>
+
+                </div>
+                <label for="usuario"> Ingrese su Usuario</label>
+                <input type="text" id="usuario" name="txtusuario" pattern="[A-Za-z] ?+" placeholder="Ingrese su usuario"
+                    required>
+
+                <label for="pass">Ingrese su Contraseña</label>
+
+                <input type="password" id="password" name="txtpassword" pattern="[A-Za-z] ?+"
+                    placeholder="Ingrese su contraseña" required>
+
+                <br>
+                <label for="tipo"> Seleccione su tipo de usuario</label>
+                <select name="selectTipo">
+                    <option value="Cliente">Cliente</option>
+                    <option value="Empleado">Empleado</option>
+                </select><br><br>
+                <div class="form-group">
+                    <button id="b" type="submit">Acceder</button>
+                </div>
+                <br><br>
+                <div class="links-container">
+                    <a href="registro.html" class="link registro">Regístrate</a>
+                    <a href="#" class="link olvido">¿Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var backButton = document.querySelector(".back-button");
+
+        if (backButton) {
+            backButton.addEventListener("click", function () {
+                history.back();
+            });
+        }
+    });
+</script>
+</html>

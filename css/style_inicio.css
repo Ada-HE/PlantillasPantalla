@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+button{
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+.padre{
+    height: 600px;
+    width: 260px;
+    background-color: rgb(186, 97, 2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.sad.txt {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.sad.txt {
+    margin: 5px;
+}
+
+/* Estilos para la sección de platos destacados */
+.sab {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f19430;
+
+}
+
+.men {
+    text-align: center;
+    margin: 15px;
+}
+
+.men img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.men img {
+    max-width: 40%;
+    border-radius: 8px;
+
+}
+
+.men p {
+    margin: 10px 0;
+}
+
+/* Estilos para la sección central */
+.centro {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.centro div {
+    text-align: center;
+}
+
+.centro img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.names span {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Estilos para los párrafos de descripción */
+.description {
+    margin-top: 10px;
+    color: #555;
+}

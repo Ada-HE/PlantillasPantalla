@@ -10,7 +10,7 @@ body {
 
 .main {
     width: 400px;
-    height: 870px;
+    height: 970px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -51,12 +51,6 @@ h6, h5 {
     opacity: 50%;
 }
 
-.icon {
-    height: 1em;
-    width: 1em;
-    background-color: red; 
-    border-radius: 50%;
-}
 
 .scroller {
     margin: 1em;
@@ -129,6 +123,7 @@ h6, h5 {
 .names {
     display: flex;
 }
+
 
 .inferior {
     padding: 10px 0;

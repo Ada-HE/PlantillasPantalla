@@ -1,0 +1,150 @@
+
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+
+
+
+
+/*globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1,h2{
+    font-family: 'Arima Madurai',cursive;
+}
+h3, p, a{
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/*menu desplegable*/
+.ocultar{
+    display: none;
+}
+.btn-cerrar{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    user-select: none;
+
+}
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #cd9252;
+    z-index: 4;
+}
+
+@keyframes desplazamiento {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+
+
+
+/*encabezado*/
+.contenedor-navegacion{
+    background-color: #007bce;
+    position: relative;
+    z-index: 7;
+}
+
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    
+}
+
+.logo h2, .navegacion a {
+  color: #fff;  
+}
+.logo h2{
+    font-size: 3rem;
+}
+.navegacion a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    padding-left: 4rem;
+    display: block;
+    transition: color .3s ease-in-out;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .navegacion a{
+        text-align: left;
+    }
+}
+
+
+.navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 35rem;/*tamaño de el menu*/
+    padding: 3rem 4rem;
+    background-color: #007bce;
+    animation: desplazamiento .5s ease-in-out;
+}
+
+.menu_desplegable:hover{
+    cursor: pointer;
+}
+
+.menu_desplegable span{
+    background-color: #fff;
+    display: block;
+    width: 5rem;
+    height: .5rem;
+    margin-bottom: .5rem;
+}
+
+/*Imagen*/
+.contenido-header{
+    position: relative;
+}
+
+.contenido-header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+

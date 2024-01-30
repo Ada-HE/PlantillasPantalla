@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="css/style_menucs.css">
+    <link rel="stylesheet" href="css/style_menu.css">
+
     <title>Login</title>
 </head>
 
 <body>
     <div class="main">
+
         
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Mix Sandwich</h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="index.html">inicio</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="login.html">Logeo</a>
+                </nav>
+                <div class="menu_desplegable">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
         <div class="login-container">
             
-            <div class="titulo">
-                <button class="back-button" onclick="history.back()">Atrás</button>
-                <img src="img/logo.png" alt="logo">
-                <p>Mix-sandwich</p>
-            </div>
+          
 
             <div class="d1">
                 <h1>Iniciar Sesión</h1>
@@ -54,6 +70,8 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -66,4 +84,10 @@
         }
     });
 </script>
+
+    
+
+
+<script src="js/app.js"></script>
+
 </html>
